@@ -7,6 +7,29 @@
   Version:      1.0.0
 */
 
-body {
+.genesis-nav-menu {
 
+}
+
+.breadcrumb-container {
+	width: 100%;
+	overflow: auto;
+	height: auto;
+	background: #f5f5f5;
+	padding: 30px 0;
+}
+.breadcrumb {
+	margin-bottom: 0;
+}
+
+.author-box {
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	margin: 0 0 40px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.author-box p {
+	font-size: 14px;
 }
