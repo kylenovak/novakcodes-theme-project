@@ -33,3 +33,94 @@
 .author-box p {
 	font-size: 14px;
 }
+
+
+
+/* Three column footer widgets */
+.footer-widgets {
+  border-top: 2px solid #1e1e1e;
+	clear: both;
+	overflow: hidden;
+	padding: 32px 0 16px;
+	padding: 2rem 0 1rem;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-area {
+	width: 33.33%;
+	float: left;
+}
+
+
+
+
+.sidebar .enews-widget,
+.sidebar .enews-widget .widget-title {
+	color: #fff;
+}
+
+.sidebar .widget.enews-widget {
+	background-color: #333;
+	padding: 30px;
+}
+
+.sidebar .enews-widget input,
+.sidebar .enews-widget input:focus {
+	border: 1px solid #333;
+}
+
+.sidebar .enews-widget input[type="submit"] {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+.sidebar .enews-widget input:hover[type="submit"],
+.sidebar .enews-widget input:focus[type="submit"]  {
+	background-color: #fff;
+	color: #333;
+}
+
+.enews-widget input {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 16px;
+}
+
+.enews-widget input[type="submit"] {
+	margin: 0;
+	width: 100%;
+}
+
+.enews form + p {
+	margin-top: 24px;
+}
+
+
+/* SIDEBARS */
+
+/* Home sidebar subscribe */
+#home-sidebar-subscribe {
+  background-color: #333;
+	padding: 50px 25px;
+}
+#home-sidebar-subscribe .enews-widget {
+
+	color: #FFFFFF;
+	margin: auto;
+	padding: 0;
+}
+#home-sidebar-subscribe.sidebar .widget {
+	margin-bottom: 0;
+}
+
+#home-sidebar-subscribe input[type="text"],
+#home-sidebar-subscribe input[type="email"],
+#home-sidebar-subscribe input[type="submit"] {
+	float: left;
+	margin-right: 5px;
+	width: calc(33.33% - 5px);
+}
