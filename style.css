@@ -258,7 +258,7 @@ article.post.entry {
 	border-bottom: 2px dashed #212121;
 	clear: both;
 	overflow: hidden;
-	padding: 32px 0 16px;
+	padding: 32px 0;
 	color: #bdbdbd;
 }
 
@@ -270,15 +270,18 @@ article.post.entry {
 	color: #0288d1;
 }
 
-.footer-widgets .widget {
-	margin-bottom: 16px;
-}
-
 .footer-widgets .widget-area {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-right: 2px dashed #212121;
+}
+.footer-widgets .widget-area:first-child {
+	padding-left: 0;
 	padding-right: 60px;
 }
 .footer-widgets .widget-area:last-child {
 	padding-right: 0;
+	border: none;
 }
 
 .footer-widgets .widget-area {
@@ -291,7 +294,7 @@ article.post.entry {
 }
 
 .footer-widgets .menu-item {
-	margin-bottom: 2px;
+	margin-bottom: 3px;
 }
 
 .footer-widgets .menu-item a {
