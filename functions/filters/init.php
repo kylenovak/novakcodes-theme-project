@@ -7,6 +7,6 @@ include( 'filter-breadcrumbs.php' );
 include( 'filter-comment-submit-text.php' );
 include( 'filter-comments-title.php' );
 include( 'filter-post-comments-title.php' );
-include( 'filter-post-entry-header.php' );
+include( 'filter-post-entry-info.php' );
 include( 'filter-post-entry-meta.php' );
 include( 'filter-read-more-link.php' );

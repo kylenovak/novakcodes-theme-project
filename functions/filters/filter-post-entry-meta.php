@@ -3,7 +3,7 @@
 // Filter the post entry default before text.
 function post_meta_filter($post_meta) {
   if ( !is_page() ) {
-      $post_meta = '[post_categories before=""] [post_tags before="Keywords: "]';
+      $post_meta = '[post_categories before="Posted Under: "] [post_tags before="Tagged With: "]';
       return $post_meta;
   }
 }

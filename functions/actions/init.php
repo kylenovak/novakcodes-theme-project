@@ -13,7 +13,7 @@ include( REMOVE_ACTIONS_DIR . 'remove-site-footer.php' );
 
 // Include the Add Actions files.
 include( ADD_ACTIONS_DIR . 'add-breadcrumbs.php' );
-include( ADD_ACTIONS_DIR . 'add-comment-policy.php' );
 include( ADD_ACTIONS_DIR . 'add-custom-footer.php' );
 include( ADD_ACTIONS_DIR . 'add-favicon.php' );
+include( ADD_ACTIONS_DIR . 'add-post-featured-image.php' );
 include( ADD_ACTIONS_DIR . 'add-post-navigation.php' );

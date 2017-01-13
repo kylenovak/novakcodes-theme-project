@@ -13,6 +13,10 @@ body {
 }
 a {
 	color: #0288d1;
+	text-decoration: none;
+}
+a:hover {
+	color: #01579b;
 }
 label,
 strong,
@@ -83,12 +87,25 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	overflow: auto;
 	height: auto;
-	background: #f5f5f5;
+	background: #333;
 	padding: 30px 0;
 }
 .breadcrumb {
-	color: #333;
+	color: #bdbdbd;
 	margin-bottom: 0;
+}
+.breadcrumb .breadcrumb-link-wrap a {
+	color: #0288d1;
+	padding: 10px;
+
+	border-radius: 3px;
+}
+.breadcrumb .breadcrumb-link-wrap a:hover {
+	background-color: #212121;
+	color: #01579b;
+}
+.breadcrumb .fa-chevron-right {
+	color: #212121;
 }
 
 .author-box {
@@ -111,9 +128,124 @@ article.post.entry {
 	border-radius: 5px;
 }
 
+.entry-title a:hover {
+	color: #01579b;
+}
+
+.entry-categories,
+.entry-tags {
+	color: #333;
+}
+
+/* After widget area plugins */
+
+.after-entry.widget-area {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.pagination-previous a,
+.pagination-next a {
+	padding: 10px;
+	background-color: #f1f1f1;
+	color: #01579b;
+	border: 2px solid #01579b;
+	border-radius: 3px;
+}
+.pagination-previous a:hover,
+.pagination-next a:hover {
+	background-color: #01579b;
+	color: #fff;
+}
+
+/* Comments */
+
+#comments {
+	overflow: hidden;
+}
+#respond {
+	margin-top: 20px;
+	overflow: auto;
+}
+#respond,
+#comments article {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+#comments h3 {
+	color: #333;
+  line-height: 0.5;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+#comments h3:before,
+#comments h3:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-bottom: 2px dashed #757575;
+  top: 50%;
+	width: 675px;
+  max-width: 675px;
+}
+#comments h3:before {
+  right: 100%;
+  margin-right: 15px;
+}
+#comments h3:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+#respond h3:before,
+#respond h3:after {
+	border: none;
+}
+#respond h3,
+#respond label {
+	font-weight: bold;
+	color: #01579b;
+}
+#respond .form-submit {
+	margin-bottom: 0;
+}
+#respond .form-submit input[type="submit"] {
+	background-color: #333;
+	float: right;
+	color: #fff;
+	display: block;
+	border-radius: 3px;
+}
+#respond input,
+#respond textarea {
+	background-color: #f1f1f1;
+	color: #333;
+	border: 2px solid #bdbdbd;
+	border-radius: 3px;
+}
+#respond input:focus,
+#respond textarea:focus {
+	background-color: #fff;
+	border-color: #01579b;
+}
+#respond textarea {
+	resize: vertical;
+}
+#respond .form-submit input[type="submit"] {
+	border: none;
+	cursor: pointer;
+}
+#respond .form-submit input[type="submit"]:hover,
+#respond .form-submit input[type="submit"]:focus {
+	color: #fff;
+	background-color: #01579b;
+}
+
 
 /* SIDEBARS */
-
 
 .sidebar .widget {
 	background-color: #fff;
@@ -122,10 +254,16 @@ article.post.entry {
 	width: auto;
 }
 
-/* Primary sidebar - enews plugin */
-.sidebar .enews-widget,
+/* Primary sidebar  */
+
+/* Enews plugin */
+
 .sidebar .enews-widget .widget-title {
-	color: #fff;
+	color: #0288d1;
+}
+
+.sidebar .enews-widget {
+	color: #bdbdbd;
 }
 
 .sidebar .widget.enews-widget {
@@ -134,21 +272,27 @@ article.post.entry {
 }
 
 .sidebar .enews-widget input {
-	border: 2px solid #fff;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	border: 2px solid #333;
 }
 .sidebar .enews-widget input:focus {
-	border: 2px solid #01579b;
+	background-color: #fff;
+	border-radius: 3px;
+	border: 2px solid #0288d1;
 }
 
 .sidebar .enews-widget input[type="submit"] {
-	background-color: #01579b;
-	border: 2px solid #01579b;
+	background-color: #0288d1;
+	border: 2px solid #333;
 	color: #fff;
 }
 
 .sidebar .enews-widget input:hover[type="submit"],
 .sidebar .enews-widget input:focus[type="submit"]  {
-	background-color: transparent;
+	background-color: #fff;
+	border: 2px solid #0288d1;
+	color: #333;
 }
 
 .sidebar .enews-widget input {
@@ -166,61 +310,82 @@ article.post.entry {
 	margin-top: 24px;
 }
 
+/* Tag Cloud plugin */
+.widget_tag_cloud .tagcloud a {
+	background-color: #01579b;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px !important;
+	border-radius: 3px;
+	margin: 0 5px 5px 0;
+	padding: 2px 5px;
+	text-decoration: none;
+}
 
-/* Home sidebar subscribe */
-#home-sidebar-subscribe {
+.widget_tag_cloud .tagcloud a:hover {
+	background-color: #f1f1f1;
+	color: #333;
+}
+
+/* Recent Posts With Thumbnails plugin */
+.rpwwt-widget ul li {
+	margin-bottom: 0;
+}
+
+/* Home banner sidebar  */
+#home-banner-sidebar {
   background-color: #333;
 	padding: 50px 25px;
 }
-#home-sidebar-subscribe .enews-widget {
+#home-banner-sidebar .enews-widget {
 	color: #fff;
 	margin: auto;
 	padding: 0;
 }
-#home-sidebar-subscribe.sidebar .widget {
+#home-banner-sidebar.sidebar .widget {
 	margin-bottom: 0;
 }
 
-#home-sidebar-subscribe input[type="text"],
-#home-sidebar-subscribe input[type="email"],
-#home-sidebar-subscribe input[type="submit"] {
+#home-banner-sidebar input[type="text"],
+#home-banner-sidebar input[type="email"],
+#home-banner-sidebar input[type="submit"] {
 	float: left;
 	margin-right: 10px;
 	width: calc(33.33% - 10px);
 }
-#home-sidebar-subscribe input[type="submit"] {
+#home-banner-sidebar input[type="submit"] {
 	width: calc(33.33%);
 	margin-right: 0;
 }
 
-#home-sidebar-subscribe .enews-widget,
-#home-sidebar-subscribe .enews-widget .widget-title {
+#home-banner-sidebar .enews-widget,
+#home-banner-sidebar .enews-widget .widget-title {
 	background-color: transparent;
 	color: #bdbdbd;
 }
-#home-sidebar-subscribe .enews-widget .widget-title {
+#home-banner-sidebar .enews-widget .widget-title {
 	color: #0288d1;
 }
 
-#home-sidebar-subscribe .enews-widget input {
+#home-banner-sidebar .enews-widget input {
 	background-color: #f1f1f1;
 	border-radius: 5px;
 	border: 2px solid #333;
 }
-#home-sidebar-subscribe .enews-widget input:focus {
+#home-banner-sidebar .enews-widget input:focus {
 	background-color: #fff;
 	border-radius: 3px;
 	border: 2px solid #0288d1;
 }
 
-#home-sidebar-subscribe .enews-widget input[type="submit"] {
+#home-banner-sidebar .enews-widget input[type="submit"] {
 	background-color: #0288d1;
 	border: 2px solid #333;
 	color: #fff;
 }
 
-#home-sidebar-subscribe .enews-widget input:hover[type="submit"],
-#home-sidebar-subscribe .enews-widget input:focus[type="submit"]  {
+#home-banner-sidebar .enews-widget input:hover[type="submit"],
+#home-banner-sidebar .enews-widget input:focus[type="submit"]  {
 	background-color: #fff;
 	border: 2px solid #0288d1;
 	color: #333;
@@ -233,20 +398,6 @@ article.post.entry {
 }
 #home-sidebar .widget {
 	width: 100%;
-}
-@media all and (max-width: 1280px) {
-	#home-sidebar {
-		width: 300px;
-	}
-}
-@media all and (max-width: 1020px) {
-	#home-sidebar {
-		width: 100%;
-	}
-
-	#home-sidebar .wrap {
-		padding: 0;
-	}
 }
 
 /* FOOTER */
@@ -324,6 +475,12 @@ article.post.entry {
 	border: 2px solid #0288d1;
 }
 
+/* Site Footer Banner */
+.site-footer-banner {
+	padding: 30px 0;
+	background-color: #fff;
+}
+
 /* Site Footer */
 .site-footer {
 	padding: 30px 0;
@@ -344,4 +501,71 @@ article.post.entry {
 }
 .site-footer a:hover {
 	color: #0288d1;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1280px) {
+	#home-sidebar {
+		width: 300px;
+	}
+}
+@media all and (max-width: 1020px) {
+	#home-sidebar {
+		width: 100%;
+	}
+
+	#home-sidebar .wrap {
+		padding: 0;
+	}
+
+	#home-banner-sidebar .enews-widget input {
+		width: 100%;
+		float: left;
+	}
+
+	.footer-widgets .widget-area:first-child,
+	.footer-widgets .widget-area:last-child,
+	.footer-widgets .widget-area {
+		width: 100%;
+		padding: 0;
+		border: none;
+	}
+
+	.footer-widgets .widget-area {
+		margin-bottom: 40px;
+	}
+
+	.footer-widgets .widget-area:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+/* Simple Social Icons */
+.simple-social-icons a {
+	font-size: 2em !important;
+}
+.simple-social-icons li.ssi-email a:hover {
+	background-color: #049fb3 !important;
+}
+
+.simple-social-icons li.ssi-github a:hover {
+	background-color: #000 !important;
+}
+
+.simple-social-icons li.ssi-linkedin a:hover {
+	background-color: #007bb6 !important;
+}
+
+.simple-social-icons li.ssi-rss a:hover {
+	background-color: #ff6600 !important;
+}
+
+.simple-social-icons li.ssi-twitter a:hover {
+	background-color: #00aced !important;
+}
+
+.simple-social-icons li.ssi-gplus a:hover {
+	background-color: #dd4b39 !important;
 }

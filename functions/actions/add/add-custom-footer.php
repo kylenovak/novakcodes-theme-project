@@ -36,3 +36,16 @@ function my_custom_footer() { ?>
   </footer>
 <?php }
 add_action( 'genesis_footer', 'my_custom_footer' );
+
+
+// Customize the site footer.
+function my_custom_footer_banner() { ?>
+  <footer class="site-footer-banner">
+    <div class="wrap">
+      <p>
+
+      </p>
+    </div>
+  </footer>
+<?php }
+//add_action( 'genesis_before_footer', 'my_custom_footer_banner', 5 );

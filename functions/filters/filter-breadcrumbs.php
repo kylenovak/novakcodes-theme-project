@@ -3,7 +3,7 @@
 // Modify breadcrumb arguments.
 function sp_breadcrumb_args( $args ) {
 	$args['home'] = '<i class="fa fa-home" aria-hidden="true"></i> Home';
-	$args['sep'] = ' / ';
+	$args['sep'] = ' <i class="fa fa-chevron-right" aria-hidden="true"></i> ';
 	$args['list_sep'] = ', '; // Genesis 1.5 and later
 	$args['prefix'] = '<div class="breadcrumb-container"><div class="breadcrumb wrap">';
 	$args['suffix'] = '</div></div>';
