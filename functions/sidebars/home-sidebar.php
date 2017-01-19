@@ -11,10 +11,10 @@ genesis_register_sidebar( array(
  * Remove the default sidebar, and add the home sidebar to the homepage.
  */
 function home_sidebar_logic() {
-    if ( is_home() ) {
-        remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
-        add_action( 'genesis_after_content', 'get_home_sidebar' );
-    }
+  if ( is_home() ) {
+      remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
+      add_action( 'genesis_after_content', 'get_home_sidebar' );
+  }
 }
 add_action( 'get_header', 'home_sidebar_logic' );
 

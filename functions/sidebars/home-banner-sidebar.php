@@ -11,9 +11,9 @@ genesis_register_sidebar( array(
  * Add the sidebar home banner to the homepage.
  */
 function home_banner_sidebar_logic() {
-    if ( is_home() ) {
-        add_action( 'genesis_after_header', 'get_home_banner_sidebar' );
-    }
+  if ( is_home() ) {
+      add_action( 'genesis_after_header', 'get_home_banner_sidebar' );
+  }
 }
 add_action( 'get_header', 'home_banner_sidebar_logic' );
 
