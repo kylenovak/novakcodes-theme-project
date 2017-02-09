@@ -19,6 +19,6 @@ function sp_breadcrumb_args( $args ) {
 	$args['labels']['tax'] = '';
 	$args['labels']['post_type'] = '';
 	$args['labels']['404'] = ''; // Genesis 1.5 and later
-return $args;
+	return $args;
 }
 add_filter( 'genesis_breadcrumb_args', 'sp_breadcrumb_args' );

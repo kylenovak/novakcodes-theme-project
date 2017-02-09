@@ -16,5 +16,15 @@ function my_enqueue_styles() {
 
   // Add Font Awesome icons.
   wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
+
+
+  wp_enqueue_style( 'dashicons' );
+
+  wp_enqueue_script( 'responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
+  $output = array(
+  	'mainMenu' => __( '', 'my-theme-text-domain' ),
+  	'subMenu'  => __( 'Menu', 'my-theme-text-domain' ),
+  );
+  wp_localize_script( 'responsive-menu', 'ResponsiveMenuL10n', $output );
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );

@@ -1,14 +1,17 @@
 ul.my_recent_custom_posts li {
-  margin: 0 0 10px 0;
+  margin: 0;
   list-style: none;
+  display: inline-block;
+  float: left;
+  clear: both;
 }
 ul.my_recent_custom_posts li img {
-	display: inline;
+  display: inline;
   float: left;
   margin: 0.3em 0.75em 0.75em 0;
 }
 ul.my_recent_custom_posts li span {
-  display: inline-block;
+  display: block;
 }
 ul.my_recent_custom_posts span.terms a {
   color: #757575;

@@ -100,12 +100,14 @@ class My_Recent_Custom_Posts extends WP_Widget {
     $width = $instance['width'];
     $height = $instance['height'];
 
-		echo $before_widget;
-		if ( $title ) {
-			echo $before_title . $title . $after_title;
-		}
-		$this->getCustomPosts( $postType, $taxonomy, $numberOfPosts, $width, $height );
-		echo $after_widget;
+    if ( ( is_home() || 'book_review' === get_post_type() && ( is_single() || is_tax( $taxonomy ) ) ) && !is_search() && !is_author() ) {
+  		echo $before_widget;
+  		if ( $title ) {
+  			echo $before_title . $title . $after_title;
+  		}
+  		$this->getCustomPosts( $postType, $taxonomy, $numberOfPosts, $width, $height );
+  		echo $after_widget;
+    }
 	}
 
 	function getCustomPosts($postType, $taxonomy, $numberOfPosts, $width, $height) { //html

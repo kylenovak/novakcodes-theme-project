@@ -12,7 +12,7 @@ genesis_register_sidebar( array(
  */
 function social_sidebar_logic() {
   // Only show this sidebar on Pages and 404 page.
-  if ( is_page( 'about' ) || is_page( 'contact' ) || is_404()  || is_search() ) {
+  if ( is_page( 'about' ) || is_page( 'contact' ) || is_page( 'privacy' ) || is_page( 'comment-policy' ) || is_page( 'sitemap' ) || is_404()  || is_search() ) {
       remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
       add_action( 'genesis_after_content', 'get_social_sidebar' );
   }
