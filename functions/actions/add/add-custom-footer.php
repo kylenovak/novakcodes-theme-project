@@ -23,8 +23,8 @@ function get_footer_text() {
   $footer_text .=  ' &middot; Built on the ' . $genesis_link;
 
   $link_wrap_open = '<span class="footer-link-wrap">';
-  $privacy_link = '<a href="/privacy">Privacy</a> &middot; ';
-  $comment_policy_link = '<a href="/comment-policy">Comment Policy</a> &middot; ';
+  $privacy_link = '<a href="/privacy">Privacy Policy</a> &middot; ';
+  $comment_policy_link = '<a href="/feed">RSS Feed</a> &middot; ';
   $sitemap_link = '<a href="/sitemap">Sitemap</a>';
   $link_wrap_close = '</span>';
 
