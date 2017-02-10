@@ -14,6 +14,6 @@ add_filter( 'genesis_comment_list_args', 'childtheme_comment_list_args' );
  * @return array Amended comment settings.
  */
 function childtheme_comment_list_args( $args ) {
-    $args['avatar_size'] = 70;
+    $args['avatar_size'] = 60;
 	return $args;
 }
