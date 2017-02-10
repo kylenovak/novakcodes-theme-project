@@ -159,6 +159,13 @@ button#mobile-nav-primary {
 }
 
 @media only screen and (max-width: 1020px) {
+	.sidebar .widget,
+	.entry {
+		margin-bottom: 5%;
+	}
+	.site-inner {
+		padding-top: 5%;
+	}
 	.site-header {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -207,6 +214,26 @@ button#mobile-nav-primary {
 	.site-header li:last-child.current-menu-item a {
 		background: #fff;
 		color: #01579b;
+	}
+
+	#home-banner-sidebar {
+		padding: 5% 0;
+	}
+	#respond {
+		margin-bottom: 5% !important;
+	}
+	.footer-widgets {
+		margin-top: 5%;
+	}
+	.footer-link-wrap {
+		display: block;
+		width: 100%;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.site-footer {
+		text-align: center;
+		padding: 5% 0 !important;
 	}
 
 	.js nav {
@@ -506,9 +533,13 @@ main.content article.page {
 	margin: 20px 0;
 }
 #respond {
-	margin: 0;
-	margin-top: 10px;
 	overflow: auto;
+}
+@media only screen and (min-width: 1021px) {
+	#respond {
+		margin: 0;
+		margin-top: 10px;
+	}
 }
 #comments ul.children li {
 	padding: 0 0 0 60px;
@@ -716,7 +747,11 @@ img.avatar {
 /* Home banner sidebar  */
 #home-banner-sidebar {
   background-color: #333;
-	padding: 50px 25px;
+}
+@media all and (min-width: 1021px) {
+	#home-banner-sidebar {
+		padding: 50px 25px;
+	}
 }
 #home-banner-sidebar .enews-widget {
 	color: #fff;
@@ -788,13 +823,16 @@ img.avatar {
 	background-color: #333;
   border-top: 2px solid #212121;
 	border-bottom: 2px dashed #212121;
-	margin-top: 60px;
 	clear: both;
 	overflow: hidden;
 	padding: 40px 0;
 	color: #bdbdbd;
 }
-
+@media only screen and (min-width: 1021px) {
+	.footer-widgets {
+		margin-top: 60px;
+	}
+}
 .footer-widgets a {
 	text-decoration: none;
 	color: #01579b;
