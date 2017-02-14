@@ -25,7 +25,7 @@ function get_footer_text() {
   $link_wrap_open = '<span class="footer-link-wrap">';
   $privacy_link = '<a href="/privacy">Privacy Policy</a> &middot; ';
   $comment_policy_link = '<a href="/feed">RSS Feed</a> &middot; ';
-  $sitemap_link = '<a href="/sitemap">Sitemap</a>';
+  $sitemap_link = '<a href="/sitemap.xml">Sitemap</a>';
   $link_wrap_close = '</span>';
 
   $footer_text .= $link_wrap_open . $privacy_link . $comment_policy_link . $sitemap_link . $link_wrap_close;
