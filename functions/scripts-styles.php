@@ -20,6 +20,7 @@ function my_enqueue_styles() {
   // Google fonts.
   wp_enqueue_style( 'source-serif-pro', 'https://fonts.googleapis.com/css?family=Source+Serif+Pro' );
   wp_enqueue_style( 'source-sans-pro', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' );
+  wp_enqueue_style( 'pacifico', 'https://fonts.googleapis.com/css?family=Pacifico' );
 
   wp_enqueue_style( 'dashicons' );
 

@@ -55,6 +55,16 @@ h1, h2, h3, h4, h5 {
 div.addtoany_content_top {
 	margin-bottom: 40px;
 }
+div.addtoany_content_bottom:before {
+	content: "If You Liked This Post, Please Share It!";
+	font-family: 'Pacifico', sans-serif;
+	color: #333;
+	margin-bottom: 5px;
+	font-style: italic;
+	float: left;
+	display: block;
+	width: 100%;
+}
 article.book_review div.entry-content p:first-of-type:first-letter,
 article.post.entry div.entry-content p:first-of-type:first-letter {
 	float: left;
