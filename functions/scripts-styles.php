@@ -17,6 +17,9 @@ function my_enqueue_styles() {
   // Add Font Awesome icons.
   wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 
+  // Google fonts.
+  wp_enqueue_style( 'source-serif-pro', 'https://fonts.googleapis.com/css?family=Source+Serif+Pro' );
+  wp_enqueue_style( 'source-sans-pro', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' );
 
   wp_enqueue_style( 'dashicons' );
 
