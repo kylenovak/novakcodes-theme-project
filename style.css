@@ -794,6 +794,10 @@ img.avatar {
 
 /* Recent Posts With Thumbnails plugin */
 .rpwwt-widget ul li {
+	margin: 0 !important;
+}
+
+.sidebar li {
 	margin-bottom: 0;
 }
 
