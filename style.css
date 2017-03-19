@@ -89,6 +89,17 @@ article.post.entry div.entry-content p:first-of-type:first-letter {
    color: #424242;
 }
 
+.entry-image-link {
+	height: auto;
+	display: block;
+	max-height: 491px;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+a.entry-image-link img.post-image.entry-image {
+	margin-bottom: 0;
+}
+
 /* Site Header */
 .site-header {
 	background-color: #fff;
