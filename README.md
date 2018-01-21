@@ -9,7 +9,6 @@ The following tools and technologies were used in the making and hosting of this
 - Wordpress
 - Genesis Theme (theme framework)
 - PHP
-- MySQL
 - JavaScript
 - JQuery
 - CSS
