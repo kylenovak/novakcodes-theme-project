@@ -14,5 +14,7 @@ What I achieved from this project was that I got to learn a lot of tools that I 
 
 ## Features
 Project features include:
+- Responsive web design
+- CSS Transitions and Animations
 - My custom Wordpress widgets/plugins
 - My custom Wordpress theme
